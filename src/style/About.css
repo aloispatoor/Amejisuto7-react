@@ -1,0 +1,13 @@
+#about{
+    display: flex;
+    flex-direction: column;
+    margin: 5em 3em;
+}
+
+#about article{
+    background-color: #750037;
+    color: #FA1593;
+    width: 30%;
+    padding: 3em;
+    align-self: flex-end;
+}

@@ -1,0 +1,8 @@
+.divider-container{
+    display: flex;
+    justify-content: center;
+}
+
+.divider-container img{
+    width: 70%;
+}

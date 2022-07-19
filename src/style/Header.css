@@ -1,0 +1,17 @@
+header .title{
+    background-color: #004B6B;
+    text-align:center;
+    margin: 5em;
+    width: 50%;
+}
+
+header nav ul{
+    display:flex;
+    gap: 2em;
+    justify-content: flex-end;
+    padding-right: 2em;
+}
+
+header nav a{
+    font-size: 1.5em;
+}
