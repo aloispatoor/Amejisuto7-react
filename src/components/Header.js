@@ -1,4 +1,5 @@
 import '../style/Header.css'
+import { useState } from 'react'
 
 function Title(){
     let title = "Amejisuto7";
@@ -10,13 +11,26 @@ function Title(){
 }
 
 function NavBar(){
+    const [showLinks, setShowLinks] = useState(false);
+    const handleShowLinks = () => {
+        setShowLinks(!showLinks)
+    }
     return(
-        <nav>
-            <ul>
-                <li><a href="#">/Pixel Art</a></li>
-                <li><a href="#">/Digital Art</a></li>
-                <li><a href="#">/Commissions</a></li>
+        <nav className={`navbar ${showLinks ? "showNav" : "hideNav"} `}>
+            <ul className='navbar__links'>
+                <li className='navbar__item'>
+                    <a href="/" className='navbar__link'>/Pixel Art</a>
+                </li>
+                <li className='navbar__item'>
+                    <a href="/" className='navbar__link'>/Digital Art</a>
+                </li>
+                <li className='navbar__item'>
+                    <a href="/" className='navbar__link'>/Commissions</a>
+                </li>
             </ul>
+            <button className='navbar__burger' onClick={handleShowLinks}>
+                <span className='bar'></span>
+            </button>
         </nav>
     )
 }
