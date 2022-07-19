@@ -25,6 +25,7 @@ header .title{
     display:none
 }
 
+/* MENU BURGER */
 @media screen and (max-width:768px) {
     .navbar__links{
         flex-direction:column;
