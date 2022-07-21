@@ -13,7 +13,22 @@ header .title{
 }
 
 .navbar__link{
+    display: inline-block;
     font-size: 1.5em;
+    position : relative;
+}
+.navbar__link::after{
+    content: "";
+    position : absolute;
+    left: 1px;
+    bottom: -0.2em;
+    width: 0%;
+    height: 3px;
+    background-color: #95DEFF;
+    transition: all .5s ease-out;
+}
+.navbar__link:hover::after{
+    width: 50%;
 }
 
 .navbar__burger{
