@@ -7,7 +7,7 @@ function About(){
             <article>
                 <h2>{title}</h2>
                 <p>
-                    I'm a <strong>french pixel and furry artist</strong>.
+                    My name is Aloïs, I'm a <strong>french pixel and furry artist</strong>.
                     I've always designed characters, since my childhood. And it has never left me!
                 </p>
                 <p>
