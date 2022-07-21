@@ -1,3 +1,4 @@
+/* SET UP */
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +17,7 @@
     src: url(../assets/fonts/FiraCode/Fira\ Code\ Medium\ Nerd\ Font\ Complete.ttf);
 }
 
+/* GLOBAL SETTINGS */
 body{
     font-family: FiraCode;
     background-image: url('/public/img/pexels-photo-2129796.png');
@@ -44,6 +46,7 @@ h2{
     font-size: 2.5em;
 }
 
+/* CONTAINERS */
 .pink-container{
     box-shadow: 2px 2px 5px black;
     background-color: #750037;
@@ -54,4 +57,39 @@ h2{
     box-shadow: 2px 2px 5px black;
     color: #95DEFF;
     background-color: #004B6B;
+}
+
+/* BUTTONS */
+/* BLUE BUTTON */
+.blue-button{
+    background-color: #95DEFF;
+    color: #004B6B;
+    padding: 0.5rem 2rem;
+    text-align: center; 
+    border: 1px solid #95DEFF;
+    border-radius: 20px;
+    transition: all .5s ease-out;
+}
+.blue-button:hover{
+    color: #95DEFF;
+    background-color: #004B6B;
+    border: 1px dashed #95DEFF;
+    border-radius: 0px;
+}
+
+/* PINK BUTTON */
+.pink-button{
+    background-color: #FA1593;
+    color: #750037;
+    padding: 0.5rem 2rem;
+    text-align: center; 
+    border: 1px solid #FA1593;
+    border-radius: 20px;
+    transition: all .5s ease-out;
+}
+.pink-button:hover{
+    color: #FA1593;
+    background-color: #750037;
+    border: 1px dashed #FA1593;
+    border-radius: 0px;
 }

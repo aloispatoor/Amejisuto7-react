@@ -21,21 +21,6 @@
     justify-content: center;
     align-items: center;
 }
-#pixelArtSlider .button-container .button{
-    background-color: #95DEFF;
-    color: #004B6B;
-    padding: 0.5rem 2rem;
-    text-align: center; 
-    border: 1px solid #95DEFF;
-    border-radius: 20px;
-    transition: all .5s ease-out;
-}
-#pixelArtSlider .button-container .button:hover{
-    color: #95DEFF;
-    background-color: #004B6B;
-    border: 1px dashed #95DEFF;
-    border-radius: 0px;
-}
 
 .imgslider{
     width: 30%;

@@ -34,7 +34,7 @@ const PixelArtSlider = ({images}) => {
                 </div>
             </div>
             <div className="button-container">
-                    <a href="/pixelart" className="button">More</a>
+                    <a href="/pixelart" className="blue-button">More</a>
             </div>
         </section>
     )
