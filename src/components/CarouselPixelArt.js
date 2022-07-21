@@ -20,7 +20,7 @@ const PixelArtSlider = ({images}) => {
             <div className="flexbox">
                 <article>
                     <p>
-                        Here is my best pixel art features.
+                        Here is my best <strong>pixel art</strong> features made on Aseprite.
                     </p>
                 </article>
                 <div className="imgslider">
@@ -34,7 +34,7 @@ const PixelArtSlider = ({images}) => {
                 </div>
             </div>
             <div className="button-container">
-                    <a href="/" className="button">More</a>
+                    <a href="/pixelart" className="button">More</a>
             </div>
         </section>
     )

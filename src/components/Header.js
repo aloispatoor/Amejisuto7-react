@@ -19,13 +19,13 @@ function NavBar(){
         <nav className={`navbar ${showLinks ? "showNav" : "hideNav"} `}>
             <ul className='navbar__links'>
                 <li className='navbar__item'>
-                    <a href="/" className='navbar__link'>/Pixel Art</a>
+                    <a href="/pixelart" className='navbar__link'>/Pixel Art</a>
                 </li>
                 <li className='navbar__item'>
-                    <a href="/" className='navbar__link'>/Digital Art</a>
+                    <a href="/furryart" className='navbar__link'>/Furry Art</a>
                 </li>
                 <li className='navbar__item'>
-                    <a href="/" className='navbar__link'>/Commissions</a>
+                    <a href="/commission" className='navbar__link'>/Commissions</a>
                 </li>
             </ul>
             <button className='navbar__burger' onClick={handleShowLinks}>
