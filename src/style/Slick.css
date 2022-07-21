@@ -1,0 +1,43 @@
+#pixelArtSlider{
+    margin: 5em;
+    padding: 3rem;
+    background-color: #004B6B;
+}
+
+#pixelArtSlider .flexbox{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+}
+
+#pixelArtSlider article{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#pixelArtSlider .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pixelArtSlider .button-container .button{
+    background-color: #95DEFF;
+    color: #004B6B;
+    padding: 0.5rem 2rem;
+    text-align: center; 
+    border-radius: 20px;
+}
+
+.imgslider{
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.slick-slide img {
+    margin: auto;
+    /* width: 30%;
+    height: 50%; */
+}
