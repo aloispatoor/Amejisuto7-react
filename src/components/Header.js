@@ -4,7 +4,7 @@ import { useState } from 'react'
 function Title(){
     let title = "Amejisuto7";
     return (
-            <div className='title'>
+            <div className='title blue-container'>
                 <h1>{title}</h1>
             </div>
     )

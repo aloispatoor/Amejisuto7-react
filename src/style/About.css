@@ -5,9 +5,7 @@
 }
 
 #about article{
-    background-color: #750037;
-    color: #FA1593;
-    width: 30%;
+    width: 50%;
     padding: 3em;
     align-self: flex-end;
 }

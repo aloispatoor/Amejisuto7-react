@@ -16,7 +16,7 @@ const PixelArtSlider = ({images}) => {
      
     };
     return (
-        <section id="pixelArtSlider">
+        <section id="pixelArtSlider" className="blue-container">
             <div className="flexbox">
                 <article>
                     <p>

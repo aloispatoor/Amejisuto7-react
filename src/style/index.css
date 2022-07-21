@@ -18,7 +18,10 @@
 
 body{
     font-family: FiraCode;
-    background-color: #052240;
+    background-image: url('/public/img/pexels-photo-2129796.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #95DEFF;
 }
 
@@ -39,4 +42,16 @@ h1{
 h2{
     text-transform: uppercase;
     font-size: 2.5em;
+}
+
+.pink-container{
+    box-shadow: 2px 2px 5px black;
+    background-color: #750037;
+    color: #FA1593;
+}
+
+.blue-container{
+    box-shadow: 2px 2px 5px black;
+    color: #95DEFF;
+    background-color: #004B6B;
 }

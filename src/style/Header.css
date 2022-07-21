@@ -1,9 +1,9 @@
 header .title{
-    background-color: #004B6B;
     text-align:center;
     margin: 5em;
     width: 50%;
 }
+
 
 .navbar__links{
     display:flex;
