@@ -1,4 +1,4 @@
-#pixelArtSlider{
+#pixelArtSlider, #furryArtSlider{
     margin: 8em;
     padding: 5em;
 }
@@ -6,29 +6,42 @@
 #pixelArtSlider .flexbox{
     display: flex;
     justify-content: space-between;
+    margin: 3em;
+}
+#furryArtSlider .flexbox{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     height: 40vh;
 }
 
-#pixelArtSlider article{
+#pixelArtSlider article, #furryArtSlider article{
     display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1em;
     padding: 2rem;
 }
 
-#pixelArtSlider .button-container{
+#pixelArtSlider .button-container, #furryArtSlider .button-container{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .imgslider{
-    width: 30%;
-    object-fit: cover;
+    width: 20vw;
+}
+
+.slick-slide{
+    width: 20vw;
+    height: 40vh;
 }
 
 .slick-slide img {
+    object-fit: cover;
+    object-position: center;
     margin: auto;
-    width: 80%;
-    height: 50%;
+    width: 100%;
 }

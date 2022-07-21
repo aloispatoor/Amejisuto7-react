@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import '../style/Slick.css';
 import Slider from "react-slick";
 
-const PixelArtSlider = ({images}) => {
+const FurryArtSlider = ({images}) => {
   
     const settings = {
         infinite: true,
@@ -16,12 +16,12 @@ const PixelArtSlider = ({images}) => {
      
     };
     return (
-        <section id="pixelArtSlider" className="blue-container">
+        <section id="furryArtSlider" className="pink-container">
             <div className="flexbox">
                 <article>
-                <h2>/pixel art</h2>
+                    <h2>/furry art</h2>
                     <p>
-                        Here is my best <strong>pixel art</strong> features made on Aseprite.
+                        Here is my best <strong>furry art</strong> features made on CLIP STUDIO PAINT.
                     </p>
                 </article>
                 <div className="imgslider">
@@ -35,11 +35,11 @@ const PixelArtSlider = ({images}) => {
                 </div>
             </div>
             <div className="button-container">
-                    <a href="/pixelart" className="blue-button">More</a>
+                    <a href="/furryart" className="pink-button">More</a>
             </div>
         </section>
     )
 
 }
 
-export default PixelArtSlider;
+export default FurryArtSlider;
