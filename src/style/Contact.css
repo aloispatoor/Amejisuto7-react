@@ -1,0 +1,42 @@
+#contact {
+    margin: 10em;
+}
+
+#contact .flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5rem;
+}
+
+#contact form{
+    display : flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    width: 30%;
+}
+#contact form input{
+    height: 3em;
+    font-family: VictorMono;
+}
+#contact form textarea{
+    font-family: VictorMono;
+    max-width: inherit;
+}
+
+#contact .socialMedia{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+#contact .socialMedia i{
+    font-size: 3rem;
+    transition: all .5s ease-out;
+}
+#contact .socialMedia i:hover{
+    color: white;
+}

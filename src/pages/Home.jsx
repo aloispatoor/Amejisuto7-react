@@ -4,6 +4,8 @@ import { pixelArtList } from '../data/pixelArtList'
 import PixelArtSlider from '../components/CarouselPixelArt'
 import { furryArtList } from '../data/furryArtList'
 import FurryArtSlider from '../components/CarouselFurryArt'
+import SectionCommission from '../components/SectionCommission'
+import Contact from '../components/Contact'
 
 
 function Home() {
@@ -14,6 +16,8 @@ function Home() {
         <PixelArtSlider images={pixelArtList} />
         <Divider />
         <FurryArtSlider images={furryArtList} />
+        <SectionCommission />
+        <Contact />
     </div>
 
     

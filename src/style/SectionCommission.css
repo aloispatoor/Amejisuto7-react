@@ -1,0 +1,15 @@
+#commissionHome{
+    height : 50vh;
+    background-color: #004B6B;
+    padding: 10em;
+}
+
+#commissionHome p{
+    margin: 2rem;
+}
+#commissionHome .button-container{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
