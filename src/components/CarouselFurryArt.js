@@ -13,8 +13,8 @@ const FurryArtSlider = ({images}) => {
         lazyLoad: true,
         autoplay: true,
         autoplaySpeed: 3000,
-     
     };
+    
     return (
         <section id="furryArtSlider" className="pink-container">
             <div className="flexbox">

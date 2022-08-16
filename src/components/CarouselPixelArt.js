@@ -13,8 +13,8 @@ const PixelArtSlider = ({images}) => {
         lazyLoad: true,
         autoplay: true,
         autoplaySpeed: 3000,
-     
     };
+    
     return (
         <section id="pixelArtSlider" className="blue-container">
             <div className="flexbox">

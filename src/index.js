@@ -7,6 +7,7 @@ import PixelArt from "./pages/PixelArt";
 import FurryArt from "./pages/FurryArt";
 import Commission from "./pages/Commission";
 import NoPage from "./pages/NoPage";
+import LegalMentions from "./pages/LegalMentions";
 import './style/index.css';
 
 import reportWebVitals from './reportWebVitals';
@@ -20,6 +21,7 @@ export default function App() {
           <Route path="pixelart" element={<PixelArt />} />
           <Route path="furryart" element={<FurryArt />} />
           <Route path="commission" element={<Commission />} />
+          <Route path="legalmentions" element={<LegalMentions />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

@@ -50,7 +50,7 @@ h2{
 .pink-container{
     box-shadow: 2px 2px 5px black;
     background-color: #750037;
-    color: #FA1593;
+    color: #ff4bae;
 }
 
 .blue-container{
@@ -79,17 +79,17 @@ h2{
 
 /* PINK BUTTON */
 .pink-button{
-    background-color: #FA1593;
+    background-color: #ff4bae;
     color: #750037;
     padding: 0.5rem 2rem;
     text-align: center; 
-    border: 1px solid #FA1593;
+    border: 1px solid #ff4bae;
     border-radius: 20px;
     transition: all .5s ease-out;
 }
 .pink-button:hover{
-    color: #FA1593;
+    color: #ff4bae;
     background-color: #750037;
-    border: 1px dashed #FA1593;
+    border: 1px dashed #ff4bae;
     border-radius: 0px;
 }
