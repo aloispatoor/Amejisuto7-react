@@ -1,21 +1,47 @@
 import React from 'react';
 import Modal from 'react-modal';
-import { pixelArtList } from '../data/pixelArtList';
 import '../style/Modals.css';
 
-// pixelArtList = ({images}) => {};
-
 function ModalPixelArt(){
-    let subtitle;
+
     const [modalIsOpen, setIsOpen] = React.useState(false);
+
+    function ArtList(props){
+        const artList = (
+            props.pixelArtList.map((items) => (
+                <div className='img-container' key={items.id} onClick={openModal}>
+                    <img src={items.src}  alt={items.alt}/>
+                </div>
+            ))
+        );
+        
+        return(
+            <div className='single-pixelart'>
+                {artList}
+            </div>
+        );
+    }
+
+    function Image(props){
+        const singleimage = props.pixelArtList.map((item) =>
+        <img
+            key={item.id}
+            id={item.id}
+            alt={item.alt}
+            src={item.src}
+            />
+        );
+
+        return(
+            <div>
+                {singleimage}
+            </div>
+        );
+    }
+
 
     function openModal() {
         setIsOpen(true);
-    }
-
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-        subtitle.style.color = '#f00';
     }
 
     function closeModal() {
@@ -25,25 +51,41 @@ function ModalPixelArt(){
     return (
         <div>
             <article id="modalpixelart">
-                <div className='single-pixelart'>
-                    {pixelArtList.map((item) => (
-                        <div key={item.id}>
-                            <img src={item.src}  alt={item.alt} onClick={openModal}/>
-                        </div>
-                    ))}
-                </div>
+                    <ArtList />
             </article>
             <article id="modal-open">
                 <Modal
                     isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
+                    shouldCloseOnOverlayClick={true}
                     onRequestClose={closeModal}
-                    contentLabel="Example Modal"
+                    contentLabel="Modal"
+                    style={{
+                        overlay: {
+                          position: "fixed",
+                          top: 0,
+                          left: 0,
+                          right: 0,
+                          bottom: 0,
+                          opacity: 1
+                        },
+        
+                        content: {
+                          position: "absolute",
+                          top: "50%",
+                          left: "50%",
+                          transform: "translate(-50%, -50%)",
+                          background: "#004B6B",
+                          overflow: "auto",
+                          WebkitOverflowScrolling: "touch",
+                          borderRadius: "4px",
+                          outline: "none"
+                        }
+                      }}
                 >
-                    <h3 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h3>
-                        
-                    <button onClick={closeModal}>close</button>
-                    <div>I am a modal</div>
+                    <Image />
+                    <div>
+                        <button className='blue-button' onClick={closeModal}>close</button>
+                    </div>
                 </Modal>
             </article>
         </div>

@@ -4,16 +4,18 @@
 
 #modalpixelart{
     margin: 2em;
+    width: inherit;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.single-pixelart{
-    width: 15em;
-    height: 15em;
+.img-container{
+    width: 20vw;
+    height: 20vh;
 }
-.single-pixelart img{
+.img-container img{
     width: 100%;
     object-fit: cover;
     object-position: center;
