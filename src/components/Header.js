@@ -19,6 +19,9 @@ function NavBar(){
         <nav className={`navbar ${showLinks ? "showNav" : "hideNav"} `}>
             <ul className='navbar__links'>
                 <li className='navbar__item'>
+                    <a href="/" className='navbar__link'>/Home</a>
+                </li>
+                <li className='navbar__item'>
                     <a href="/pixelart" className='navbar__link'>/Pixel Art</a>
                 </li>
                 <li className='navbar__item'>

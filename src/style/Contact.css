@@ -14,7 +14,7 @@
     display : flex;
     flex-direction: column;
     gap: 2em;
-    padding: 2em;
+    padding: 2em 7em;
     width: 30%;
 }
 #contact form input{
@@ -31,12 +31,12 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 1em;
-    padding: 1em;
+    padding: 1em 7em;
 }
 #contact .socialMedia i{
     font-size: 3rem;
     transition: all .5s ease-out;
 }
 #contact .socialMedia i:hover{
-    color: white;
+    color: yellow;
 }

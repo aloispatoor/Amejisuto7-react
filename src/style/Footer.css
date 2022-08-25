@@ -11,5 +11,5 @@ footer div a{
     transition: all .5s ease-out;
 }
 footer div a:hover{
-    color: white;
+    color: yellow;
 }

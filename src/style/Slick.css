@@ -1,18 +1,25 @@
 #pixelArtSlider, #furryArtSlider{
     margin: 8em;
-    padding: 5em;
+    padding: 5em 20em;
+    transition: all .5s ease-out;
+}
+#pixelArtSlider:hover, #furryArtSlider:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: inset 0 100rem 100rem -100rem yellow; 
 }
 
 #pixelArtSlider .flexbox{
     display: flex;
     justify-content: space-between;
     margin: 3em;
+    gap: 3em;
 }
 #furryArtSlider .flexbox{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     height: 40vh;
+    gap: 3em;
 }
 
 #pixelArtSlider article, #furryArtSlider article{

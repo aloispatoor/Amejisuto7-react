@@ -48,15 +48,17 @@ h2{
 
 /* CONTAINERS */
 .pink-container{
-    box-shadow: 2px 2px 5px black;
     background-color: #750037;
     color: #ff4bae;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .blue-container{
-    box-shadow: 2px 2px 5px black;
     color: #95DEFF;
     background-color: #004B6B;
+    -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 /* BUTTONS */
