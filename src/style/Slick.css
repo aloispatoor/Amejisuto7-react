@@ -1,7 +1,7 @@
 #pixelArtSlider, #furryArtSlider{
     margin: 8em;
     padding: 5em 20em;
-    transition: all .5s ease-out;
+    transition: all .2s ease-out;
 }
 #pixelArtSlider:hover, #furryArtSlider:hover{
     transform: translate(-5px, -5px);
