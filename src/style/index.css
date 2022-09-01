@@ -47,18 +47,28 @@ h2{
 }
 
 /* CONTAINERS */
-.pink-container{
+.pink-italic-container{
     background-color: #750037;
     color: #ff4bae;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
-.blue-container{
+.blue-italic-container{
     color: #95DEFF;
     background-color: #004B6B;
     -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); 
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.pink-container{
+    background-color: #750037;
+    color: #ff4bae;
+}
+
+.blue-container{
+    color: #95DEFF;
+    background-color: #004B6B;
 }
 
 /* BUTTONS */

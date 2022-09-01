@@ -23,7 +23,7 @@
 }
 #contact form textarea{
     font-family: VictorMono;
-    max-width: inherit;
+    max-width: 100%;
 }
 
 #contact .socialMedia{
