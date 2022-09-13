@@ -1,10 +1,16 @@
 import '../style/AnimCommission.css';
+import Typed from 'react-typed';
 
 function OpenOrClosed(){
     
     return(
         <section id="anim-commissions">
-            <p id="letters">Commissions are <span>OPEN</span></p>
+            <Typed
+                strings={[
+                    "Commissions are OPEN",
+                ]}
+                typeSpeed={150}
+            />
         </section>
     )
 }
