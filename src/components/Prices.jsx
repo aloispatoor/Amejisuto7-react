@@ -1,6 +1,11 @@
 import '../style/Prices.css';
 
-function Prices({images}){
+const Prices = ({images}) => {
+    const whichId = images.reduce(
+        (acc, item) =>
+        acc.includes(item.id) ? acc : acc.concat(item.id),
+        []
+    )
 
     return(
         <section id="prices">
@@ -14,11 +19,17 @@ function Prices({images}){
                             <p>Price : 15€</p>
                             <p>+ 8€ per extra character</p>
                         </div>
-                        {images.map((item) =>(
-                            <div key={item.id === 1} className='img-sizing'>  
-                                <img src={item.src} alt={item.alt} />
-                            </div>
-                        ))}
+                            {whichId.map((id) =>(
+                                <div key={id}>
+                                    <img src={id.src} alt={id.alt} />
+                                </div>
+                            ))}
+                            {/* {images.map((item) =>(
+                                <div key={item.id} value={item.id} className='img-sizing'>  
+                                    <img src={item.src} alt={item.alt} />
+                                </div>
+                            ))} */}
+
                     </div>
                     <div className='fullbody'>
                         <h4>Fullbody</h4>
