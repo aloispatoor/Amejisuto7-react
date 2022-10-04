@@ -1,0 +1,33 @@
+#prices{
+    margin: 3em;
+}
+
+.furry-art{
+    padding: 2em;
+}
+
+.furry-art h3{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.furry-art .flexbox{
+    display: flex;
+    gap: 5em;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.headshots div, .fullbody div{
+    margin: 1em 0;
+}
+
+.img-sizing img{
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+}
+
+.fullbody img{
+    object-position: top;
+}

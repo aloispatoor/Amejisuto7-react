@@ -3,7 +3,7 @@ import '../style/Prices.css';
 
 
 const Prices = () => {
-    const ArticFox = commissionsList[0];
+    const articFox = commissionsList[0];
     const kitsune = commissionsList[1];
     const paul = commissionsList[2];
     const synthDeer = commissionsList[3];
@@ -13,18 +13,16 @@ const Prices = () => {
 
     return(
         <section id="prices">
-            <article className='furry-art'>
+            <article className='furry-art blue-container'>
             <h3>Furry Art Commissions</h3>
                 <div className='flexbox'>
                     <div className='headshots'>
-                        <div>
-                            <h4>Small size / Headshots</h4>
-                            <small>Can be ideal for profile picture in social medias, for example</small>
-                            <p>Price : 15€</p>
-                            <p>+ 8€ per extra character</p>
-                        </div>
-                        <div key={ArticFox.id}>
-                            <img src={ArticFox.src} alt={ArticFox.alt} />
+                        <h4>Small size / Headshots</h4>
+                        <small>Can be ideal for profile picture in social medias, for example</small>
+                        <p>Price : 15€</p>
+                        <p>+ 8€ per extra character</p>
+                        <div key={articFox.id} className="img-sizing">
+                            <img src={articFox.src} alt={articFox.alt} />
                         </div>
                     </div>
                     <div className='fullbody'>
@@ -32,9 +30,9 @@ const Prices = () => {
                         <p>Price : 35€</p>
                         <p>+ 15€ per extra character</p>
                         <p>+ 20€ complex background</p>
-                    </div>
-                    <div key={kitsune.id}>
-                        <img src={kitsune.src} alt={kitsune.alt} />
+                        <div key={kitsune.id} className="img-sizing">
+                            <img src={kitsune.src} alt={kitsune.alt} />
+                        </div>
                     </div>
                 </div>
             </article>
