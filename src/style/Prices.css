@@ -2,6 +2,11 @@
     margin: 3em;
 }
 
+#prices span{
+    color: yellow;
+}
+
+/* FURRY ART ARTICLE */
 .furry-art{
     padding: 2em;
 }
@@ -30,4 +35,54 @@
 
 .fullbody img{
     object-position: top;
+}
+
+
+/* PIXEL ART ARTICLE */
+.pixel-art{
+    margin-top: 3em;
+    padding: 2em;
+}
+.pixel-art h3{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.pixel-art .pa-imgs{
+    display: flex;
+    gap: 5em;
+}
+
+.pixel-art .flexbox{
+    display: flex;
+    gap: 5em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* TWITCH ARTICLE */
+.twitch{
+    margin-top: 3em;
+    padding: 2em;
+}
+.twitch h3{
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.twitch .flexbox{
+    display: flex;
+    gap: 2em;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.twitch .t-img{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    width: 10em;
+    height: 10em;
+    object-fit: cover;
 }

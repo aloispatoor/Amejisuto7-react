@@ -4,7 +4,7 @@ function TermsCondition(){
 
     return(
         <section id="terms-conditions" className='pink-container'>
-            <h3>Terms and Conditions</h3>
+            <h3>/Terms and Conditions</h3>
             <div>
                 <p>
                     Payment method: PAYPAL only. 
