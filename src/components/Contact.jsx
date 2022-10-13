@@ -3,6 +3,19 @@ import React, { useState } from "react";
 
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/e18b77d0-29fa-11ed-a7a0-3f26160640a2";
 
+function SocialMedia() {
+    return (
+        <article className='socialMedia blue-italic-container'>
+            <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
+            <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
+            <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
+        </article>
+
+    )
+};
+
 const Contact = () => {
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
@@ -18,13 +31,7 @@ const Contact = () => {
                     <h2>Thank you!</h2>
                     <div className='flexbox'>
                         <div>We'll be in touch soon.</div>
-                        <article className='socialMedia blue-italic-container'>
-                            <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
-                            <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
-                            <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
-                        </article>
+                        < SocialMedia />
                     </div>
                 </section>
             </>
@@ -48,13 +55,7 @@ const Contact = () => {
                     <input type="submit" className='pink-button' value="Send"/>
 
                 </form>
-                <article className='socialMedia blue-italic-container'>
-                    <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
-                    <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
-                    <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
-                </article>
+                < SocialMedia />
             </div>
         </section>
     );

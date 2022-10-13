@@ -28,7 +28,7 @@ header .title{
     transition: all .2s ease-out;
 }
 .navbar__link:hover::after{
-    width: 50%;
+    width: 2em;
 }
 
 .navbar__burger{

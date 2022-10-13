@@ -8,7 +8,7 @@ function About(){
             <div className='img-sizing'>
                 <img src={image} alt="Illustration image" />
             </div>
-            <article className='pink-italic-container'>
+            <article className='pink-container'>
                 <h2>{title}</h2>
                 <p>
                     My name is Aloïs, I'm a <strong>french pixel and furry artist</strong>.
