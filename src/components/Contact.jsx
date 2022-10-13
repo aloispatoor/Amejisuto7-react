@@ -19,11 +19,11 @@ const Contact = () => {
                     <div className='flexbox'>
                         <div>We'll be in touch soon.</div>
                         <article className='socialMedia blue-italic-container'>
-                            <a href="https://mastodon.art/@Artmejisuto7"><i class="fa-brands fa-mastodon"></i></a>
-                            <a href="https://www.artstation.com/amejisuto7"><i class="fa-brands fa-artstation"></i></a>
-                            <a href="https://twitter.com/AloisDuPerigord"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="https://t.me/aloisduperigord"><i class="fa-brands fa-telegram"></i></a>
-                            <a href="https://utip.io/alexandrovitch"><i class="fa-brands fa-gratipay"></i></a>
+                            <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
+                            <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
+                            <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
                         </article>
                     </div>
                 </section>
@@ -49,11 +49,11 @@ const Contact = () => {
 
                 </form>
                 <article className='socialMedia blue-italic-container'>
-                    <a href="https://mastodon.art/@Artmejisuto7"><i class="fa-brands fa-mastodon"></i></a>
-                    <a href="https://www.artstation.com/amejisuto7"><i class="fa-brands fa-artstation"></i></a>
-                    <a href="https://twitter.com/AloisDuPerigord"><i class="fa-brands fa-twitter"></i></a>
-                    <a href="https://t.me/aloisduperigord"><i class="fa-brands fa-telegram"></i></a>
-                    <a href="https://utip.io/alexandrovitch"><i class="fa-brands fa-gratipay"></i></a>
+                    <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
+                    <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
+                    <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
                 </article>
             </div>
         </section>
