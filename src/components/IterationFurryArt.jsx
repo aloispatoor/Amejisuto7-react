@@ -3,7 +3,7 @@ import useModal from './useModal';
 import Modal from './Modal';
 
 const IterationFurryArt = ({images}) => {
-    const { isShowing, toggle } = useModal();
+    const { isShowing, toggle } = useModal(images);
     return (
         <div id='iterationfurryart'>
             {images.map((item) =>(

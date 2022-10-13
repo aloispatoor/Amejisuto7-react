@@ -3,7 +3,7 @@ import useModal from './useModal';
 import Modal from './Modal';
 
 const IterationPixelArt = ({images}) => {
-    const { isShowing, toggle } = useModal();
+    const { isShowing, toggle } = useModal(images);
     return (
         <div id='iterationpixelart'>
             {images.map((item) =>(
