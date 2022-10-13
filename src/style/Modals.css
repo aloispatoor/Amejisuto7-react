@@ -1,8 +1,8 @@
-.PixelArt{
+.PixelArt, .FurryArt{
     margin: 2em;
 }
 
-#modalpixelart{
+#modalpixelart, #modalfurryart{
     margin: 2em;
     width: inherit;
     display: flex;
@@ -11,12 +11,24 @@
     flex-wrap: wrap;
 }
 
-.img-container{
-    width: 20vw;
-    height: 20vh;
+#modalpixelart .img-sizing,
+#modalfurryart .img-sizing{
+    margin-bottom: 2em;
+    width: 25em;
+    height: 25em;
+    overflow: hidden;
 }
-.img-container img{
+
+#modalpixelart .img-sizing img,
+#modalfurryart .img-sizing img{
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    height: 100%;
+    object-fit: cover;  
+    transition: all .5s ease-out;
+}
+#modalpixelart .img-sizing img:hover,
+#modalfurryart .img-sizing img:hover{
+    cursor: pointer;
+    transform: scale(125%);
+    filter: blur(4px);
 }

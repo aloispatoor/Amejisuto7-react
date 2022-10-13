@@ -1,6 +1,6 @@
 function NoPage(){
     return(
-        <div className="NoPage">
+        <div id="NoPage">
 
         </div>
     )

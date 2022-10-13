@@ -1,9 +1,9 @@
 import '../style/Modals.css';
 
-const ModalPixelArt = ({images}) => {
+const ModalFurryArt = ({images}) => {
 
     return (
-        <div id='modalpixelart'>
+        <div id='modalfurryart'>
             {images.map((item) =>(
             <div key={item.id} className="img-sizing">
                 <img src={item.src} alt={item.alt} />
@@ -14,4 +14,4 @@ const ModalPixelArt = ({images}) => {
     
 }
 
-export default ModalPixelArt
+export default ModalFurryArt
