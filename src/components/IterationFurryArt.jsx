@@ -1,18 +1,31 @@
+import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion";
+import React, { useState } from "react";
 import '../style/Modals.css';
-import useModal from './useModal';
-import Modal from './Modal';
 
 const IterationFurryArt = ({images}) => {
-    const { isShowing, toggle } = useModal(images);
+    const [selectedId, setSelectedId] = useState(null);
     return (
-        <div id='iterationfurryart'>
-            {images.map((item) =>(
-            <div key={item.id} className="img-sizing">
-                <img src={item.src} alt={item.alt} onClick={toggle} />
-                <Modal isShowing={isShowing} hide={toggle} />
+        <AnimateSharedLayout>
+            <div id='iterationfurryart'>
+                {images.map((item) =>(
+                <motion.div layoutId={item.id} key={item.id} onClick={() => setSelectedId(item.id)} className="img-sizing">
+                    <motion.img src={item.src} alt={item.alt} />
+                </motion.div>
+                ))}
             </div>
-            ))}
-        </div>
+
+            <AnimatePresence>
+                {selectedId &&
+                <motion.div className="modal-overlay">
+                    <motion.div className="modal-body">
+                        <motion.img layoutId={selectedId} src={selectedId.src} alt={selectedId.alt} />
+                        <motion.button className="modal-close-button" onClick={() => setSelectedId(null)}>✖</motion.button>
+                    </motion.div>
+                </motion.div>
+                }
+            </AnimatePresence>
+        </AnimateSharedLayout>
+
     )
     
 }
