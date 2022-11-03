@@ -1,12 +1,12 @@
 import '../style/About.css';
-import image from '../assets/img/image.webp';
+import illu from '../assets/img/image.webp';
 
 function About(){
     let title = "/About me"
     return(
         <section id="about">
             <div className='img-sizing'>
-                <img src={image} alt="Illustration image" />
+                <img src={illu} alt="Illustration" />
             </div>
             <article className='pink-container'>
                 <h2>{title}</h2>

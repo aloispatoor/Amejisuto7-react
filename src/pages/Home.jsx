@@ -10,7 +10,7 @@ import Contact from '../components/Contact'
 
 function Home() {
   return (
-    <div className='Home'>
+    <main className='Home'>
         <About />
         <Divider />
         <PixelArtSlider images={pixelArtList} />
@@ -18,7 +18,7 @@ function Home() {
         <FurryArtSlider images={furryArtList} />
         <SectionCommission />
         <Contact />
-    </div>
+    </main>
 
     
   )

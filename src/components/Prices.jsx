@@ -55,7 +55,7 @@ const Prices = () => {
                         </div>
                     </div>
                     <div className='pa-text'>
-                        <p>Pixel art commissions are in 200x200px or 300x300px resolution</p>
+                        <p>Pixel art commissions are in 200x200px or 300x300px resolution. Can be exported in .gif or .png format with a bigger resolution ; as you want</p>
                         <p>Price : <span>30€</span></p>
                     </div>
                 </div>

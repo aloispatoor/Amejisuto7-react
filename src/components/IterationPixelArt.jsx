@@ -17,8 +17,8 @@ const IterationPixelArt = ({images}) => {
             <AnimatePresence>
                 {selectedId &&
                 <motion.div className="modal-overlay">
-                    <motion.div className="modal-body">
-                        <motion.img layoutId={selectedId} src={selectedId.src} alt={selectedId.alt} />
+                    <motion.div className="modal-body" layoutId={selectedId}>
+                        <motion.img src={selectedId.src} alt={selectedId.alt} />
                         <motion.button className="modal-close-button" onClick={() => setSelectedId(null)}>✖</motion.button>
                     </motion.div>
                 </motion.div>
