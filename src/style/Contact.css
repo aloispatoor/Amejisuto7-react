@@ -14,7 +14,7 @@
     display : flex;
     flex-direction: column;
     gap: 2em;
-    padding: 2em 7em;
+    padding: 2em 3em;
     width: 30%;
 }
 #contact form input{
@@ -39,4 +39,17 @@
 }
 #contact .socialMedia i:hover{
     color: yellow;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px){
+    #contact .flexbox{
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3em;
+        margin-top: 3em;
+    }
+    #contact form{
+        width: 50%;
+    }
 }

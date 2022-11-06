@@ -8,7 +8,6 @@ function SocialMedia() {
         <article className='socialMedia blue-italic-container'>
             <a href="https://mastodon.art/@Artmejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-mastodon"></i></a>
             <a href="https://www.artstation.com/amejisuto7" target="_blank" rel="noreferrer"><i class="fa-brands fa-artstation"></i></a>
-            <a href="https://twitter.com/AloisDuPerigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-twitter"></i></a>
             <a href="https://t.me/aloisduperigord" target="_blank" rel="noreferrer"><i class="fa-brands fa-telegram"></i></a>
             <a href="https://utip.io/alexandrovitch" target="_blank" rel="noreferrer"><i class="fa-brands fa-gratipay"></i></a>
         </article>
@@ -50,7 +49,7 @@ const Contact = () => {
                     placeholder='The subject' required />
 
                     <textarea id="message" name="message" 
-                    placeholder='Type your message here' required></textarea>
+                    placeholder='Your message here' required></textarea>
 
                     <input type="submit" className='pink-button' value="Send"/>
 

@@ -1,6 +1,6 @@
 #pixelArtSlider, #furryArtSlider{
     margin: 8em;
-    padding: 5em 20em;
+    padding: 5em;
     transition: all .2s ease-out;
 }
 #pixelArtSlider:hover, #furryArtSlider:hover{
@@ -43,7 +43,6 @@
 
 .slick-slide{
     width: 20vw;
-    height: 40vh;
 }
 
 .slick-slide img {
@@ -51,4 +50,22 @@
     object-position: center;
     margin: auto;
     width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px){
+    #furryArtSlider .flexbox,
+    #pixelArtSlider .flexbox{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 900px){
+    .imgslider{
+        width: 30vw;
+    }
+    
+    .slick-slide{
+        width: 30vw;
+    }
 }

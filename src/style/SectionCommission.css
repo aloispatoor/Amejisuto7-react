@@ -1,7 +1,6 @@
 #commissionHome{
-    height : 50vh;
     background-color: #004B6B;
-    padding: 10em;
+    padding: 7em 10em;
 }
 
 #commissionHome p{
@@ -12,4 +11,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px){
+    #commissionHome{
+        padding: 5em 7em;
+    }
 }

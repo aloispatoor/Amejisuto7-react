@@ -16,7 +16,7 @@ const FurryArtSlider = ({images}) => {
     };
     
     return (
-        <section id="furryArtSlider" className="pink-italic-container">
+        <section id="furryArtSlider" className="pink-container">
             <div className="flexbox">
                 <article>
                     <h2>/furry art</h2>
