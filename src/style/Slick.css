@@ -39,10 +39,12 @@
 
 .imgslider{
     width: 20vw;
+    height: 40vh;
 }
 
 .slick-slide{
     width: 20vw;
+    height: 40vh;
 }
 
 .slick-slide img {

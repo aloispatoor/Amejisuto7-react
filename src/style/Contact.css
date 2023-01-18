@@ -25,6 +25,10 @@
     font-family: VictorMono;
     max-width: 100%;
 }
+#contact form input:active,
+#contact form textarea:active{
+    box-shadow: none;
+}
 
 #contact .socialMedia{
     display: flex;
