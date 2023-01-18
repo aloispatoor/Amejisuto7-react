@@ -4,6 +4,7 @@ import '../style/Modals.css';
 
 const IterationFurryArt = ({images}) => {
     const [selectedId, setSelectedId] = useState(null);
+    
     return (
         <AnimateSharedLayout>
             <div id='iterationfurryart'>
@@ -17,17 +18,18 @@ const IterationFurryArt = ({images}) => {
             <AnimatePresence>
                 {selectedId &&
                 <motion.div className="modal-overlay">
-                    <motion.div className="modal-body" layoutId={selectedId}>
-                        <motion.img src={selectedId.src} alt={selectedId.alt} />
+                    {images.map((item) =>(
+                    <motion.div className="modal-body" key={selectedId} layoutId={selectedId}>
+                        <motion.img src={item.src} alt={item.alt}/>
                         <motion.button className="modal-close-button" onClick={() => setSelectedId(null)}>✖</motion.button>
                     </motion.div>
+                    ))}
                 </motion.div>
                 }
             </AnimatePresence>
         </AnimateSharedLayout>
-
-    )
-    
+    ) 
 }
+
 
 export default IterationFurryArt
