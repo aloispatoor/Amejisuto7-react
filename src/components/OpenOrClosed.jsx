@@ -36,8 +36,8 @@ const AnimatedText = ({ text }) => {
 
     console.log(words);
     return (
-        <motion.div variants={container}>{words.map((word, index) => (
-            <motion.span key={index} variants={child}>{word}</motion.span>
+        <motion.div variants={container} initial="hidden" animate="visible">{words.map((word, index) => (
+            <motion.span key={index} variants={child} style={{ marginRight: "5px" }}>{word}</motion.span>
             ))}
         </motion.div>
     );
