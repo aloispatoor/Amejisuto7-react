@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import { pixelArtList } from '../data/pixelArtList'
 
-const ModalPixel = ({images}) => {
+const Modal = ({images}) => {
     const { id } = useParams();
     const navigate = useNavigate();
     console.log(id);
@@ -15,7 +16,7 @@ const ModalPixel = ({images}) => {
 
     return (
         <article className="modal-overlay">
-            <div className="modal-body">
+            <div className="modal-body pixel-art">
                 <img src={image.src} alt={image.alt} />
                 <button className="modal-close-button" onClick={goBack}>✖</button>
             </div>
@@ -23,4 +24,8 @@ const ModalPixel = ({images}) => {
     )
 }
 
-export default ModalPixel
+function RenderModalPixel(){
+    return <Modal images={pixelArtList}/>
+}
+
+export default RenderModalPixel

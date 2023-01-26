@@ -1,7 +1,8 @@
 import React from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { furryArtList } from '../data/furryArtList'
 
-const ModalFurry = ({images}) => {
+const Modal = ({images}) => {
     const { id } = useParams();
     const navigate = useNavigate();
     console.log(id);
@@ -15,7 +16,7 @@ const ModalFurry = ({images}) => {
 
     return (
         <article className="modal-overlay">
-            <div className="modal-body">
+            <div className="modal-body furry-art">
                 <img src={image.src} alt={image.alt} />
                 <button className="modal-close-button" onClick={goBack}>✖</button>
             </div>
@@ -23,4 +24,8 @@ const ModalFurry = ({images}) => {
     )
 }
 
-export default ModalFurry
+function RenderModalFurry(){
+    return <Modal images={furryArtList}/>
+}
+
+export default RenderModalFurry

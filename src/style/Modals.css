@@ -58,7 +58,11 @@
     background: transparent;
 }
 
-.modal-body{
+.furry-art{
+    width: 30vw;
+    height: 70vh;
+}
+.pixel-art{
     width: 30vw;
     height: 60vh;
 }

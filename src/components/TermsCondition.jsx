@@ -19,9 +19,8 @@ function TermsCondition(){
                     Anyway, These are the things I DON'T draw :
                     <ul>
                         <li>Very detailed art</li>
-                        <li>Hateful art</li>
                         <li>Sexual violence</li>
-                        <li>Child characters</li>
+                        <li>Childlish characters</li>
                     </ul>
                 </p>
             </div>
