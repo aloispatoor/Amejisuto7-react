@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { pixelArtList } from './data/pixelArtList'
+import { furryArtList } from './data/furryArtList'
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import PixelArt from "./pages/PixelArt";
+import ModalPixel from "./pages/ModalPixel";
+import ModalFurry from "./pages/ModalFurry";
 import FurryArt from "./pages/FurryArt";
 import Commission from "./pages/Commission";
 import NoPage from "./pages/NoPage";
@@ -24,6 +28,9 @@ export default function App() {
           <Route path="legalmentions" element={<LegalMentions />} />
           <Route path="*" element={<NoPage />} />
         </Route>
+        {/* OUTSIDE OF THE LAYOUT */}
+        <Route path="/pixelart/:id" element={<ModalPixel images={pixelArtList}/>} />
+        <Route path="/furryart/:id" element={<ModalFurry images={furryArtList}/>} />
       </Routes>
     </BrowserRouter>
   );

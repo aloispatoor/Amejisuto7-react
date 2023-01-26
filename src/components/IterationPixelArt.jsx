@@ -1,33 +1,17 @@
-import { AnimateSharedLayout, AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import '../style/Modals.css';
 
 const IterationPixelArt = ({images}) => {
-    const [selectedId, setSelectedId] = useState(null);
+
     return (
-        <AnimateSharedLayout>
-            <div id='iterationpixelart'>
-                {images.map((item) =>(
-                <motion.div layoutId={item.id} key={item.id} onClick={() => setSelectedId(item.id)} className="img-sizing">
-                    <motion.img src={item.src} alt={item.alt} />
-                </motion.div>
-                ))}
-            </div>
-
-            <AnimatePresence>
-                {selectedId &&
-                <motion.div className="modal-overlay">
-                    <motion.div className="modal-body" layoutId={selectedId}>
-                        <motion.img src={selectedId.src} alt={selectedId.alt} />
-                        <motion.button className="modal-close-button" onClick={() => setSelectedId(null)}>✖</motion.button>
-                    </motion.div>
-                </motion.div>
-                }
-            </AnimatePresence>
-        </AnimateSharedLayout>
-
-    )
-    
+        <div id='iterationpixelart'>
+            {images.map((item) =>(
+                <a key={item.id} href={`/pixelart/${item.id}`} className="img-sizing">
+                    <img src={item.src} alt={item.alt}/>
+                </a>
+            ))}
+        </div>
+    )   
 }
 
 export default IterationPixelArt

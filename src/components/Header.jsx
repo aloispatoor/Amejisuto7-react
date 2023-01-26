@@ -42,7 +42,7 @@ function NavBar(){
 
 function Header(){
     return(
-        <header>
+        <header id="header">
             <Title />
             <NavBar />
 
