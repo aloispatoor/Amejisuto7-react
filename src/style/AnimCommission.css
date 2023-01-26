@@ -3,3 +3,14 @@
     text-align: center;
     color: yellow;
 }
+
+@media screen and (max-width: 1300px){
+    #anim-commissions{
+        font-size: 3em;
+    }
+}
+@media screen and (max-width: 900px){
+    #anim-commissions{
+        font-size: 2.5em;
+    }
+}

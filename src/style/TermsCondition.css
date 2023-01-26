@@ -11,3 +11,13 @@
 #terms-conditions p{
     margin-bottom: 1em;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1300px){
+    #terms-conditions{
+        padding: 3em 10em;
+    }
+}
+@media screen and (max-width: 900px){
+    
+}

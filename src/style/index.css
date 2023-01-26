@@ -107,3 +107,21 @@ h3{
     border: 1px dashed #ff4bae;
     border-radius: 0px;
 }
+
+/* MEDIA QUERIES GENERAUX */
+@media screen and (max-width: 1300px){
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 900px){
+    h1{
+        font-size: 2.5em;
+    }
+    p, li, a{
+        font-size: 0.8em;
+    }
+}

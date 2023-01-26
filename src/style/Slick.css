@@ -63,6 +63,15 @@
     }
 }
 @media screen and (max-width: 900px){
+    #pixelArtSlider, #furryArtSlider{
+        height: 100%;
+        margin: 5em;
+        padding: 2.5em;
+    }
+    #pixelArtSlider article, #furryArtSlider article{
+        padding: 1rem;
+    }
+
     .imgslider{
         width: 30vw;
     }
