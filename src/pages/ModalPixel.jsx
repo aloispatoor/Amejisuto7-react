@@ -1,20 +1,25 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
-function ModalPixel(images){
+const ModalPixel = ({images}) => {
     const { id } = useParams();
+    const navigate = useNavigate();
     console.log(id);
     const image = images[id];
 
     if (!image) return <p>Image not found!</p>;
 
+    function goBack(){
+        navigate(-1);
+    }
+
     return (
-        <div className="modal-overlay">
+        <article className="modal-overlay">
             <div className="modal-body">
                 <img src={image.src} alt={image.alt} />
-                <button className="modal-close-button" href="/pixelart" aria-label="Close">✖</button>
+                <button className="modal-close-button" onClick={goBack}>✖</button>
             </div>
-        </div>
+        </article>
     )
 }
 
