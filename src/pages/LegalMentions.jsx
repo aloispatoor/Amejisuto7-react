@@ -5,7 +5,7 @@ function LegalMentions(){
         <section id="legalMentions">
             <article className='introLegalMentions blue-container'>
                 <h2>Terms and Conditions</h2>
-                <p>Last updated: October 13, 2022</p>
+                <p>Last updated: January 27, 2023</p>
                 <p>Please read these terms and conditions carefully before using Our Service.</p>
             </article>
             <article className='pink-container'>

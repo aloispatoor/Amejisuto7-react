@@ -16,7 +16,7 @@ const Modal = ({images}) => {
 
     return (
         <article className="modal-overlay">
-            <div className="modal-body furry-art">
+            <div className="modal-body furry-modal">
                 <img src={image.src} alt={image.alt} />
                 <button className="modal-close-button" onClick={goBack}>✖</button>
             </div>

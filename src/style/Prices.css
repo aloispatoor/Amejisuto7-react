@@ -112,5 +112,14 @@
     }
 }
 @media screen and (max-width: 900px){
-    
+    .furry-art{
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 700px){
+    .img-sizing img{
+        width: 10em;
+        height: 10em;
+        object-fit: cover;
+    }
 }

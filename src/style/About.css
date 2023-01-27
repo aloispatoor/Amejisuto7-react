@@ -29,6 +29,9 @@
         flex-direction: column;
         align-items: center;
     }
+    #about .img-sizing{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 900px){
     #about article{
@@ -36,5 +39,19 @@
     }
     #about p{
         margin: 1em;
+    }
+}
+@media screen and (max-width: 700px){
+    #about article{
+        padding: 1em;
+        width: 70%;
+    }
+    #about{
+        margin: 1.5em;
+    }
+}
+@media screen and (max-width: 375px){
+    #about article{
+        width: 80%;
     }
 }

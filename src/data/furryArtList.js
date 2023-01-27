@@ -36,15 +36,15 @@ export const furryArtList = [
         id: 5
     },
     {
-        name: 'Hug',
+        name: 'Dobermann Final Form',
         src: "/img/furryart/cd_15.webp",
-        alt: 'furry art: Bear hugging a big wolf',
+        alt: 'furry art: Body Horror',
         id: 6
     },
     {
-        name: 'Rubyus',
+        name: 'Bear',
         src: "/img/furryart/cd_16.webp",
-        alt: 'furry art: Commission for a friend',
+        alt: 'furry art: Realistic furry bear',
         id: 7
     },
 ]

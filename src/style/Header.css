@@ -59,7 +59,7 @@ header .title{
     }
     .showNav .navbar__links{
         right: 0;
-        width: 100vw;
+        width: 100%;
         visibility: visible;
     }
     .navbar__link{

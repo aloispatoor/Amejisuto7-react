@@ -19,3 +19,18 @@
         padding: 5em 7em;
     }
 }
+@media screen and (max-width: 700px){
+    #commissionHome{
+        padding: 3em 5em;
+    }
+}
+@media screen and (max-width: 500px){
+    #commissionHome{
+        padding: 2em 3em;
+    }
+}
+@media screen and (max-width: 375px){
+    #commissionHome{
+        padding: 2em;
+    }
+}

@@ -19,5 +19,12 @@
     }
 }
 @media screen and (max-width: 900px){
-    
+    #terms-conditions{
+        padding: 2em 7em;
+    }
+}
+@media screen and (max-width: 500px){
+    #terms-conditions{
+        padding: 2em 4em;
+    }
 }
