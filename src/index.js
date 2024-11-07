@@ -4,8 +4,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import PixelArt from "./pages/PixelArt";
-import RenderModalPixel from "./pages/ModalPixel";
-import RenderModalFurry from "./pages/ModalFurry";
 import FurryArt from "./pages/FurryArt";
 import Commission from "./pages/Commission";
 import NoPage from "./pages/NoPage";
@@ -25,11 +23,6 @@ export default function App() {
           <Route path="commission" element={<Commission />} />
           <Route path="legalmentions" element={<LegalMentions />} />
           <Route path="*" element={<NoPage />} />
-        </Route>
-        {/* OUTSIDE OF THE LAYOUT */}
-        <Route path="">
-          <Route path="pixelart/:id" element={<RenderModalPixel/>} />
-          <Route path="furryart/:id" element={<RenderModalFurry/>} />
         </Route>
       </Routes>
     </BrowserRouter>

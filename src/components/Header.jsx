@@ -32,6 +32,7 @@ function NavBar(){
                 </li>
             </ul>
             <button className='navbar__burger' onClick={handleShowLinks}>
+                <span className="sr-only">Menu</span>
                 <span className='bar'></span>
             </button>
         </nav>
